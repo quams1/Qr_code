@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do App</title>
+        <link rel="stylesheet" href="qr_code.css">
+    </head>
+    <body>
+        
+        <h1>Welcome!</h1>
+        <div class="container">
+          <div class="header" id="drop-area">
+            <svg width="48" height="48" viewBox="0 0 24 24"><path fill="royalblue" d="M12 16V4m0 0l-4 4m4-4l4 4"/><rect x="4" y="16" width="16" height="4" rx="2" fill="royalblue"/></svg>
+            <h2>Generate QR Code for a Link</h2>
+            <p>Enter an internet link below:</p>
+            <input type="text" id="linkInput" placeholder="https://example.com" style="width:90%;padding:10px;font-size:1em;border-radius:8px;border:2px solid #188ec9;">
+          </div>
+          <div class="footer">
+            <p id="fileStatus">No file selected</p>
+            <button id="uploadBtn" type="button">Upload</button>
+          </div>
+        </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+     <script src="qr_code.js"></script>   
+    </body>
+</html>
